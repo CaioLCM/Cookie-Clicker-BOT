@@ -22,11 +22,13 @@ cookie = driver.find_element(By.XPATH, '//*[@id="cookie"]')
 while True:
 
     # Count THE MONEY
-    my_money = float(driver.find_element(By.XPATH, '//*[@id="money"]').text)
+    try:
+        my_money = float(driver.find_element(By.XPATH, '//*[@id="money"]').text)
 
-    # Click on the cookie
-    cookie.click()
-
+        # Click on the cookie
+        cookie.click()
+    except:
+        pass
     # Look at the store
     buy = False
     try:
