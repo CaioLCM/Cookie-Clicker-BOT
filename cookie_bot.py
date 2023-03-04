@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 ###############################################################
 
-chrome_driver_path = "E:/desenvolveaqui/chromedriver.exe"
+chrome_driver_path = "E:/desenvolveaqui/chromedriver.exe" # put here your chrome-driver path
 url = "https://orteil.dashnet.org/experiments/cookie/"
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
